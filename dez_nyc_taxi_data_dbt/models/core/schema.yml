@@ -18,7 +18,7 @@ models:
             - not_null:
                 severity: error
       
-  - name: fact_trips
+  - name: fact_taxi_trips
     description: >
       Taxi trips corresponding to both service zones (Green and yellow).
       The table contains records where both pickup and dropoff locations are valid and known zones. 
@@ -126,4 +126,61 @@ models:
 
       - name: payment_type_description
         data_type: string
+        description: ""
+
+  - name: fact_fhv_trips
+    description: >
+      FHV (For Hire Vehicle) trips fact table, the table contains records where both pickup and dropoff locations are valid and known zones. 
+      Each record corresponds to a trip uniquely identified by tripid. 
+    columns:
+      - name: tripid
+        data_type: text
+        description: ""
+
+      - name: dispatching_base_num
+        data_type: text
+        description: ""
+
+      - name: service_type
+        data_type: text
+        description: ""
+
+      - name: pu_locationid
+        data_type: double precision
+        description: ""
+
+      - name: pickup_borough
+        data_type: text
+        description: ""
+
+      - name: pickup_zone
+        data_type: text
+        description: ""
+
+      - name: do_locationid
+        data_type: double precision
+        description: ""
+
+      - name: dropoff_borough
+        data_type: text
+        description: ""
+
+      - name: dropoff_zone
+        data_type: text
+        description: ""
+
+      - name: pickup_datetime
+        data_type: timestamp without time zone
+        description: ""
+
+      - name: dropoff_datetime
+        data_type: timestamp without time zone
+        description: ""
+
+      - name: sr_flag
+        data_type: double precision
+        description: ""
+
+      - name: affiliated_base_number
+        data_type: text
         description: ""

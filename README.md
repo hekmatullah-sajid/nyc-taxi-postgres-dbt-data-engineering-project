@@ -1,20 +1,20 @@
 
 # NYC Taxi Trips Data Project
 
-This project, developed as part of the Data Engineering Zoomcamp, aims to ingest, transform, and visualize New York City (NYC) taxi trip data from CSV files into a PostgreSQL database. The project utilizes a combination of Python scripts, shell scripts, DBT (Data Build Tool), and Metabase to achieve its objectives.
+This project, developed as part of the Data Engineering Zoomcamp, focuses on ingesting, transforming, and visualizing New York City (NYC) taxi trip data from CSV files into a PostgreSQL database. The project employs PostgreSQL, DBT (Data Build Tool), and Metabase to achieve its objectives.
 
 ## Objective
-The primary goal of this project is to process NYC taxi trip data spanning the years 2019 and 2020, including both Yellow and Green taxi data, as well as For-Hire Vehicle (FHV) data for the year 2019. The process involves ingesting the raw data from CSV files hosted on a public GitHub repository, transforming it using DBT, and finally visualizing the insights using Metabase.
+The primary goal is to process NYC taxi trip data spanning 2019 and 2020, covering Yellow and Green taxi data, as well as For-Hire Vehicle (FHV) data for 2019. The process involves ingesting raw data from CSV files hosted on a public GitHub repository, transforming it using DBT, and visualizing insights using Metabase.
 
 ## Components
 ### 1. Data Ingestion
-Python and shell scripts are employed to ingest the CSV files containing NYC taxi trip data from the specified GitHub repository. The data includes Yellow and Green taxi records for 2019 and 2020, as well as FHV data for 2019.
+Python and shell scripts are used to ingest CSV files containing NYC taxi trip data from the specified GitHub repository. The data includes Yellow and Green taxi records for 2019 and 2020, as well as FHV data for 2019.
 
 ### 2. Data Transformation
-DBT is utilized for data transformation tasks. This involves creating tables such as `fact_trips` and `fact_fhv` from the ingested data in the PostgreSQL database. Additionally, various other transformations and tables are created as required for downstream analysis.
+DBT is utilized for data transformation tasks. This involves creating tables such as `fact_taxi_trips` and `fact_fhv_trips` from the ingested data in the PostgreSQL database. Additionally, various other transformations and tables are created as required for downstream analysis.
 
 ### 3. Visualization
-Metabase is utilized for visualizing the transformed data. The dashboard created using Metabase provides intuitive visualizations and insights into the NYC taxi trip data, allowing for easier interpretation and analysis.
+Metabase is utilized for visualizing the transformed data. The dashboard created using Metabase provides intuitive visualizations and insights into the NYC taxi trip data, enabling easier interpretation and analysis.
 
 ## Project Structure
 - `./scripts`: Contains Python and shell scripts for data ingestion.
@@ -36,6 +36,6 @@ Metabase is utilized for visualizing the transformed data. The dashboard created
 ![DBT Lineage Graph](./img/Lineage_Graph.JPG)
 
 ## Conclusion
-This project demonstrates the end-to-end process of ingesting, transforming, and visualizing NYC taxi trip data using various tools and technologies. By leveraging Python, shell scripts, DBT, and Metabase, meaningful insights can be derived from raw data, facilitating informed decision-making and analysis in the domain of data engineering and analytics.
+This project demonstrates the end-to-end process of ingesting, transforming, and visualizing NYC taxi trip data using PostgreSQL, DBT, and Metabase. By leveraging these tools, meaningful insights can be derived from raw data, facilitating informed decision-making and analysis in the domain of data engineering and analytics.
 
 **Note:** This project is part of the Data Engineering Zoomcamp.

@@ -51,14 +51,14 @@ models:
             tests:
               - relationships:
                   to: ref('dim_zones')
-                  field: LocationID
+                  field: locationid
                   severity: warn
           - name: dropoff_locationid 
             description: locationid where the meter was engaged.
             tests:
               - relationships:
                   to: ref('dim_zones')
-                  field: LocationID
+                  field: locationid
           - name: RateCodeID 
             description: >
                 The final rate code in effect at the end of the trip.
@@ -142,14 +142,14 @@ models:
             tests:
               - relationships:
                   to: ref('dim_zones')
-                  field: LocationID
+                  field: locationid
                   severity: warn
           - name: dropoff_locationid 
             description: locationid where the meter was engaged.
             tests:
               - relationships:
                   to: ref('dim_zones')
-                  field: LocationID
+                  field: locationid
                   severity: warn
           - name: RateCodeID 
             description: >
